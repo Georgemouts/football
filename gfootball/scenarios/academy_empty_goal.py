@@ -35,3 +35,4 @@ def build_scenario(builder):
 
   builder.SetTeam(Team.e_Right)
   builder.AddPlayer(-1.0, 0.0, e_PlayerRole_GK)
+  print("Inside scenario build")
