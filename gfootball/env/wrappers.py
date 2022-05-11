@@ -159,8 +159,8 @@ class Simple115StateWrapper(gym.ObservationWrapper):
         
         o.extend(do_flatten(obs['left_team']))
         o.extend(do_flatten(obs['left_team_direction']))
-        o.extend(do_flatten(obs['right_team']))
-        o.extend(do_flatten(obs['right_team_direction']))
+        #o.extend(do_flatten(obs['right_team']))
+        #o.extend(do_flatten(obs['right_team_direction']))
 
       # If there were less than 11vs11 players we backfill missing values with
       # -1.
@@ -173,7 +173,7 @@ class Simple115StateWrapper(gym.ObservationWrapper):
       o.extend(obs['ball'])
       # ball direction
       o.extend(obs['ball_direction'])
-      print(o)
+      #print(o)
 
       # one hot encoding of which team owns the ball -BGAZO TA IF
 
