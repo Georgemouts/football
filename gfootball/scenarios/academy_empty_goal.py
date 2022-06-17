@@ -24,6 +24,8 @@ import random
 #rand = random.uniform(-0.3,0.3)
 def build_scenario(builder):
   builder.config().game_duration = 400
+  builder.config().right_team_difficulty = 0.0
+  builder.config().left_team_difficulty = 0.0
   builder.config().deterministic = False
   builder.config().offsides = False
   builder.config().end_episode_on_score = True
