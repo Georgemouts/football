@@ -89,7 +89,7 @@ action_bottom_left = CoreAction(
 action_long_pass = CoreAction(e_BackendAction.long_pass, "long_pass")
 action_high_pass = CoreAction(e_BackendAction.high_pass, "high_pass")
 action_short_pass = CoreAction(e_BackendAction.short_pass, "short_pass")
-action_shot = CoreAction(e_BackendAction.shot, "shot")
+action_shot = CoreAction(e_BackendAction.shot, "shot")#------12
 action_keeper_rush = CoreAction(
     e_BackendAction.keeper_rush, "keeper_rush", sticky=True)
 action_sliding = CoreAction(e_BackendAction.sliding, "sliding")
@@ -117,7 +117,7 @@ action_release_sliding = CoreAction(e_BackendAction.release_sliding,
 action_release_pressure = CoreAction(e_BackendAction.release_pressure,
                                      "release_pressure")
 action_release_team_pressure = CoreAction(e_BackendAction.release_team_pressure,
-                                          "release_team_pressure")
+                                         "release_team_pressure")
 action_release_switch = CoreAction(e_BackendAction.release_switch,
                                    "release_switch")
 action_release_sprint = CoreAction(e_BackendAction.release_sprint,
@@ -131,19 +131,28 @@ action_set_v1 = [
     action_top_right, action_right, action_bottom_right,
     action_bottom, action_bottom_left, action_long_pass,
     action_high_pass, action_short_pass, action_shot,
-    action_sprint, action_release_direction, action_release_sprint,
-    action_sliding, action_dribble, action_release_dribble]
+    action_sprint,
+    action_release_direction,
+    action_release_sprint,
+    action_sliding,
+    action_dribble, action_release_dribble]
 
 action_set_v2 = action_set_v1 + [action_builtin_ai]
 
 # Special action set that includes all the core actions in the same order.
 full_action_set = action_set_v2 + [
-    action_keeper_rush, action_pressure,
-    action_team_pressure, action_switch,
-    action_release_long_pass, action_release_high_pass,
-    action_release_short_pass, action_release_shot,
-    action_release_keeper_rush, action_release_sliding,
-    action_release_pressure, action_release_team_pressure,
+    action_keeper_rush,
+    action_pressure,
+    action_team_pressure,
+    action_switch,
+    action_release_long_pass,
+    action_release_high_pass,
+    action_release_short_pass,
+    action_release_shot,
+    action_release_keeper_rush,
+    action_release_sliding,
+    action_release_pressure,
+    action_release_team_pressure,
     action_release_switch,
 ]
 
