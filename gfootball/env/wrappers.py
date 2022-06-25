@@ -178,11 +178,11 @@ class Simple115StateWrapper(gym.ObservationWrapper):
       # one hot encoding of which team owns the ball -BGAZO TA IF
 
       if obs['ball_owned_team'] == -1:
-        o.extend([1, 0, 0])
+        o.extend([1])
       if obs['ball_owned_team'] == 0:
-        o.extend([0, 1, 0])
+        o.extend([0])
       if obs['ball_owned_team'] == 1:
-        o.extend([0, 0, 1])      #kratao THN KATOXI
+        o.extend([-1])
 
       active = [0] * 11
       if obs['active'] != -1:
